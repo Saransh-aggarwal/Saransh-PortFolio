@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Sparkles } from 'lucide-react';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 
@@ -17,12 +17,12 @@ export default function Hero() {
     const titleWords = "Engineering".split("");
     const titleSecondary = "Experiences".split("");
 
-    const letterAnimation = {
+    const letterAnimation: Variants = {
         hidden: { opacity: 0, y: 50 },
         visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.8, ease: [0.2, 0.65, 0.3, 0.9] }
+            transition: { duration: 0.8, ease: [0.2, 0.65, 0.3, 0.9] as const }
         }
     };
 
