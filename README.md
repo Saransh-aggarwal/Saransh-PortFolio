@@ -16,5 +16,6 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Deployment on Vercel
+You can viw my portfolio on the following link
 
 https://saransh-portfolio-virid.vercel.app/
